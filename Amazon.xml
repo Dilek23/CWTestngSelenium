@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Task Suite" parallel="tests" thread-count="2">
+
+    <test name="amazon Tests 01">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="clarusway.tests.DenemeDataProvider"></class>
+        </classes>
+
+    </test>
+    <test name="test02">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="clarusway.tests.DenemeDataProvider"></class>
+        </classes>
+
+    </test>
+</suite>
